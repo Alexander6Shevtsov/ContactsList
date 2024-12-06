@@ -63,10 +63,10 @@ extension ContactListViewController {
 // MARK: - UITableViewDelegate
 extension ContactListViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        
+        // удаление пользователей
         if editingStyle == .delete {
-            contacts.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .automatic)
+            contacts.remove(at: indexPath.row) // из масива
+            tableView.deleteRows(at: [indexPath], with: .automatic) // из интерфейса
         }
     }
 }

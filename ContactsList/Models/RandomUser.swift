@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - Result
-struct User {
+struct User { // Model
     let gender: String
     let name: Name
     let location: Location
